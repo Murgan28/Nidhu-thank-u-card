@@ -432,7 +432,7 @@
     .polaroid-photo {
       width: 100%;
       height: 240px;
-      background: #000;
+      background: #111;
       border-radius: 3px;
       overflow: hidden;
     }
@@ -441,6 +441,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: block;
       transition: transform 0.6s ease;
     }
 
@@ -568,12 +569,14 @@
       border-radius: 18px;
       overflow: hidden;
       margin-bottom: 0.8rem;
+      background: #111;
     }
 
     .leaf-photo img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: block;
     }
 
     .leaf-quote {
@@ -583,7 +586,7 @@
       font-style: italic;
     }
 
-    /* ================= PAGE 5: LOCKED LETTER VAULT & ENVELOPE ================= */
+    /* PAGE 5: LOCKED LETTER VAULT */
     .vault-box {
       width: 100%;
       max-width: 650px;
@@ -624,7 +627,7 @@
       100% { transform: scale(1.08); filter: drop-shadow(0 0 30px #00dfd8); }
     }
 
-    /* REDESIGNED AESTHETIC PASSWORD MODAL */
+    /* PASSWORD MODAL */
     .modal-overlay {
       position: fixed;
       inset: 0;
@@ -779,7 +782,7 @@
       padding: 0 4px;
     }
 
-    /* PERMANENT BOTTOM GLOWING FOOTER TEXT ON EVERY PAGE */
+    /* FOOTER */
     .permanent-footer-ribbon {
       position: fixed;
       bottom: 0;
@@ -898,7 +901,7 @@
           <div style="font-family: 'Alex Brush', cursive; font-size: 2.4rem; color: #a855f7; margin-bottom: 2rem;">A heartfelt letter straight from Momos</div>
         </div>
 
-        <!-- Hanging Fairy Light Polaroids -->
+        <!-- Hanging Fairy Light Polaroids (Pure Local Links - No Fallback) -->
         <div class="hanging-gallery-wrapper">
           <div class="hanging-wire"></div>
           
@@ -908,7 +911,7 @@
               <div class="pin-thread"></div>
               <div class="polaroid-card">
                 <div class="polaroid-photo">
-                  <img src="1000133614.jpg" alt="Nidhu Smile" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80'">
+                  <img src="./1000133614.jpg" alt="Nidhu Smile" loading="eager" decoding="async">
                 </div>
                 <div class="polaroid-caption">Golden Hour Radiance</div>
               </div>
@@ -919,7 +922,7 @@
               <div class="pin-thread"></div>
               <div class="polaroid-card">
                 <div class="polaroid-photo">
-                  <img src="1000131415.jpg" alt="Nidhu 3D Project" onerror="this.src='https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80'">
+                  <img src="./1000131415.jpg" alt="Nidhu 3D Project" loading="eager" decoding="async">
                 </div>
                 <div class="polaroid-caption">Late Night 3D Hustle</div>
               </div>
@@ -930,7 +933,7 @@
               <div class="pin-thread"></div>
               <div class="polaroid-card">
                 <div class="polaroid-photo">
-                  <img src="1000133366.jpg" alt="Nidhu Cute Face" onerror="this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80'">
+                  <img src="./1000133366.jpg" alt="Nidhu Cute Face" loading="eager" decoding="async">
                 </div>
                 <div class="polaroid-caption">That Adorable Smirk</div>
               </div>
@@ -941,7 +944,7 @@
               <div class="pin-thread"></div>
               <div class="polaroid-card">
                 <div class="polaroid-photo">
-                  <img src="1000133360.jpg" alt="Nidhu Confident" onerror="this.src='https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80'">
+                  <img src="./1000133360.jpg" alt="Nidhu Confident" loading="eager" decoding="async">
                 </div>
                 <div class="polaroid-caption">Pure Elegance & Poise</div>
               </div>
@@ -1056,31 +1059,32 @@
             <path class="tree-branches" d="M 400 520 Q 520 480 620 500" />
           </svg>
 
+          <!-- 4 Tree Cards (Pure Local Links - No Fallback) -->
           <div class="tree-cards-grid">
             <div class="tree-leaf-card">
               <div class="leaf-photo">
-                <img src="1000133614.jpg" alt="Nidhu Smile" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80'">
+                <img src="./1000133614.jpg" alt="Nidhu Smile" loading="eager" decoding="async">
               </div>
               <div class="leaf-quote">"Her natural radiance that lights up the deepest roots."</div>
             </div>
 
             <div class="tree-leaf-card">
               <div class="leaf-photo">
-                <img src="1000131415.jpg" alt="Nidhu 3D Project" onerror="this.src='https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80'">
+                <img src="./1000131415.jpg" alt="Nidhu 3D Project" loading="eager" decoding="async">
               </div>
               <div class="leaf-quote">"The midnight spark: Unmatched passion & craft in 3D."</div>
             </div>
 
             <div class="tree-leaf-card">
               <div class="leaf-photo">
-                <img src="1000133366.jpg" alt="Nidhu Cute Face" onerror="this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80'">
+                <img src="./1000133366.jpg" alt="Nidhu Cute Face" loading="eager" decoding="async">
               </div>
               <div class="leaf-quote">"A smile so gentle it cures every storm in my mind."</div>
             </div>
 
             <div class="tree-leaf-card">
               <div class="leaf-photo">
-                <img src="1000133360.jpg" alt="Nidhu Confident" onerror="this.src='https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80'">
+                <img src="./1000133360.jpg" alt="Nidhu Confident" loading="eager" decoding="async">
               </div>
               <div class="leaf-quote">"Ready to conquer Siemens Mumbai with graceful power."</div>
             </div>
@@ -1107,7 +1111,7 @@
           The Sealed Brother's Promise
         </h2>
 
-        <!-- SPECIAL HIGHLIGHTED WARNING / NOTICE -->
+        <!-- NOTICE BANNER -->
         <div style="background: rgba(255, 77, 109, 0.15); border: 2px solid #ff4d6d; border-radius: 20px; padding: 1.2rem 2rem; margin: 1.5rem auto 2.5rem; max-width: 800px; box-shadow: 0 0 30px rgba(255, 77, 109, 0.3);">
           <p style="font-size: 1.15rem; font-weight: 700; color: #ffccd5; letter-spacing: 0.5px;">
             ⚠️ "Nidhu, this is a very important letter. Please read every single word carefully from your heart."
@@ -1171,7 +1175,7 @@
 
   </main>
 
-  <!-- REDESIGNED AESTHETIC PASSWORD MODAL DIALOG -->
+  <!-- PASSWORD MODAL DIALOG -->
   <div class="modal-overlay" id="passwordModal">
     <div class="password-card" id="passwordCard">
       <div style="font-size: 2.8rem; margin-bottom: 0.5rem; filter: drop-shadow(0 0 15px #00dfd8);">🔐</div>
@@ -1195,7 +1199,7 @@
 
       <div class="lockout-warning" id="lockoutMsg"></div>
 
-      <!-- AUTO-FILL BUTTON (APPEARS ON 3RD FAILED ATTEMPT) -->
+      <!-- AUTO-FILL BUTTON -->
       <button class="autofill-btn" id="autofillBtn" onclick="autofillPassword()">
         ✨ Need Help? Click to Auto-Fill Password ✨
       </button>
@@ -1211,7 +1215,7 @@
     </div>
   </div>
 
-  <!-- PERMANENT GLOWING FOOTER TEXT FIXED ON EVERY PAGE -->
+  <!-- PERMANENT GLOWING FOOTER TEXT -->
   <footer class="permanent-footer-ribbon">
     <div class="footer-glowing-text">
       ✦ Made with pure love for Nidhu from Momos ✦
@@ -1311,7 +1315,7 @@
       }, 900);
     }
 
-    /* ================= 5. PASSWORD & VAULT SECURITY LOGIC (FIXED) ================= */
+    /* ================= 5. PASSWORD & VAULT SECURITY LOGIC ================= */
     let failedAttempts = 0;
     let isLockedOut = false;
     let lockoutTimer = null;
@@ -1333,12 +1337,10 @@
       const warning = document.getElementById('lockoutMsg');
       const passCard = document.getElementById('passwordCard');
 
-      // Case-insensitive verification
       if (input.toLowerCase() === targetPass.toLowerCase()) {
         triggerHaptic([60, 100, 60]);
         closePasswordModal();
 
-        // Reveal letter
         document.getElementById('vaultBox').style.display = 'none';
         document.getElementById('sacredLetter').style.display = 'block';
 
@@ -1348,11 +1350,9 @@
         failedAttempts++;
         triggerHaptic(100);
 
-        // Shake modal
         passCard.classList.add('shake');
         setTimeout(() => passCard.classList.remove('shake'), 500);
 
-        // Update dot indicators
         if (failedAttempts === 1) document.getElementById('dot1').classList.add('used');
         if (failedAttempts === 2) document.getElementById('dot2').classList.add('used');
         if (failedAttempts === 3) document.getElementById('dot3').classList.add('used');
@@ -1377,8 +1377,6 @@
 
       submitBtn.disabled = true;
       passInput.disabled = true;
-
-      // Reveal Autofill Helper Option
       autofillBtn.style.display = 'block';
 
       warning.textContent = `3 Incorrect attempts! Vault locked for 30s...`;
@@ -1413,7 +1411,6 @@
       document.getElementById('submitPassBtn').disabled = false;
     }
 
-    // Submit on Enter key
     document.getElementById('passInput').addEventListener('keyup', (e) => {
       if (e.key === 'Enter') verifyPassword();
     });
@@ -1442,8 +1439,8 @@
         const gain = audioCtx.createGain();
 
         osc.type = 'sine';
-        osc.frequency.setValueAtTime(587.33, audioCtx.currentTime); // D5
-        osc.frequency.exponentialRampToValueAtTime(1174.66, audioCtx.currentTime + 0.8); // D6
+        osc.frequency.setValueAtTime(587.33, audioCtx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(1174.66, audioCtx.currentTime + 0.8);
 
         gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
         gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.9);
